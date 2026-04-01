@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: url('../assets/bg.jpg') no-repeat center/cover;
+  color: white;
+  text-align: center;
+}
+
+/* Overlay */
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: #2ecc71;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: auto;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+}
+
+/* Cards */
+#farmerList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  color: black;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
